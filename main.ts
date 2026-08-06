@@ -1,4 +1,11 @@
 radio.onReceivedNumber(function (receivedNumber) {
+    basic.showLeds(`
+        # # # # #
+        # # # # #
+        # # # # #
+        # # # # #
+        # # # # #
+        `)
     ICONS[receivedNumber].showImage(0)
     basic.pause(500)
     basic.clearScreen()
